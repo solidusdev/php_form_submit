@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#outer-container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#outer-container #inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#outer-container #inner-container form {
+    text-align: center;
+    width: 50vw;
+}
+
+#outer-container #inner-container form #submit {
+    margin-top: 2rem;
+    width: 150px;
+}
+
+#outer-container #inner-container form h1 {
+    text-align: center;
+}
+
+#outer-container #inner-container form #input-container {
+    margin-top: 1.5rem;
+}
+
+#outer-container #inner-container form .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.85rem;
+}
+
+#outer-container #inner-container form .row .column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 1rem;
+}
+
+#outer-container #inner-container form .row .column input {
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+#outer-container #inner-container form .row p {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    
+    #outer-container #inner-container form .row .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0.5rem 4px;
+    }
+
+    #outer-container #inner-container form .row {
+        margin-top: 0rem;
+    }
+}
